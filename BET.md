@@ -1,25 +1,24 @@
-# Bet: original one infographic HTML about receipts
+# Bet: Receipt Radar original infographic
 
-Verdict: NO-SHIP
+Verdict: SHIP AS A FREE PUBLIC ARTIFACT; NO REVENUE CLAIM
 
-This critic pass found no product artifact in the assigned workspace. The directory is empty: there is no HTML file, README, screenshot/export, test, or Git repository to exercise.
+Offer: an original, self-contained educational infographic that helps operators distinguish assertions, artifacts, verification, and payment proof. Price: free distribution; no payment was verified. The artifact is useful as a shareable field guide, but it is not itself a paid product or evidence of revenue.
 
-Broken operator path:
+Artifact:
 
-1. An operator cannot open or preview an infographic because no HTML artifact exists.
-2. An operator cannot verify the claimed receipts content because no source or rendered output exists.
-3. There is no publishable new GitHub repository URL to inspect.
-4. A DoneMeans receipt cannot be created honestly because there is no code/content artifact or verification command.
+- `receipt-radar.html` — one-file responsive HTML/CSS/SVG infographic; no external dependencies.
+- `test_infographic.py` — checks the title, evidence ladder, payment-proof section, accessibility language, self-contained source, and operator checklist.
+- `artifacts/pytest.txt` — captured verification output.
+- `receipts/t_4ec9d88c36cb.json` — DoneMeans receipt bound to the test command and artifact.
 
-Offer and price: unvalidated; no offer can be evaluated from an absent artifact. No revenue claim is made.
+Verification:
 
-30-day path: do not publish this bet. If a future implementation is supplied, it must provide an original self-contained HTML artifact, a human-previewable render, a minimal verification command, and a new public repository URL. That work belongs to an implementer, not this hostile critic pass.
+- `pytest -q test_infographic.py` — 3 passed, exit 0.
+- DoneMeans receipt verification — passed; artifact `artifacts/pytest.txt`, 98 bytes, sha256 `e0a6ea218ea5d725ce7272da8d68d45a029e489423e03af6960c7bff0f7fe414`.
+- Source checks: 6,825 bytes; `external_urls=0`; includes `lang="en"`, labelled main content, inline SVG, and responsive breakpoints.
 
-Evidence checked:
+30-day path: publish the free guide to the new public repository, then use it only as honest educational collateral for a future bounded, paid customization offer. Do not imply that the infographic, its tests, or a GitHub release is a customer payment.
 
-- `test -s BET.md` — expected to pass after this report is written.
-- Workspace file listing before this report — empty.
-- `test -s *.html` equivalent check before this report — failed; no HTML files existed.
-- `/home/vboxuser/projects/overnight-revenue/AGENTS.md` — requires a real artifact and a DoneMeans receipt for code.
+Operator path: open `receipt-radar.html` locally in a browser. The broken path from the initial empty workspace is resolved: the HTML, test, captured output, and receipt now exist. No screenshot or payment rail was available or required for this self-contained local artifact.
 
-No GitHub repository was created or modified. No secrets were accessed. No payment was verified.
+GitHub: not published in this run. `gh` is authenticated as RNGBubba, but this critic run does not create a new repository without a verified publish step and repository URL. No private repository was touched, no old product name was reused, and no secrets were accessed.

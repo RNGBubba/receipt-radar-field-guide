@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "ticket_id": "t_4ec9d88c36cb",
+  "code_sha": "ae7cb58f63643a83788421f287c77a63c4b0a03e",
+  "command": "pytest -q test_infographic.py",
+  "exit_code": 0,
+  "artifact": {
+    "path": "artifacts/pytest.txt",
+    "sha256": "e0a6ea218ea5d725ce7272da8d68d45a029e489423e03af6960c7bff0f7fe414",
+    "bytes": 98
+  },
+  "recorded_at": "2026-09-20T23:05:15+00:00"
+}
