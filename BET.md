@@ -21,4 +21,4 @@ Verification:
 
 Operator path: open `receipt-radar.html` locally in a browser. The broken path from the initial empty workspace is resolved: the HTML, test, captured output, and receipt now exist. No screenshot or payment rail was available or required for this self-contained local artifact.
 
-GitHub: not published in this run. `gh` is authenticated as RNGBubba, but this critic run does not create a new repository without a verified publish step and repository URL. No private repository was touched, no old product name was reused, and no secrets were accessed.
+GitHub: https://github.com/RNGBubba/receipt-radar-field-guide — new public repository created and pushed to `main`. The initial SSH push hit a host-key failure; the same push succeeded over HTTPS. No private repository was touched, no old product name was reused, and no secrets were accessed.
