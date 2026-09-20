@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Receipt Radar — Make a claim easy to trust</title>
+  <style>
+    :root{--ink:#10233f;--muted:#5d6d83;--paper:#f5f7fb;--card:#fff;--line:#d8e0eb;--mint:#b9f2d0;--orange:#ffb35c;--blue:#78b8ff;--purple:#a895ff;--shadow:0 18px 45px rgba(16,35,63,.12)}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.45}
+    .wrap{max-width:1180px;margin:auto;padding:34px 22px 48px}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#4574a7}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin:20px 0 34px}.hero h1{font-size:clamp(42px,7vw,78px);line-height:.94;letter-spacing:-.065em;margin:0 0 18px;max-width:720px}.hero h1 span{color:#3a69d6}.hero p{font-size:19px;color:var(--muted);max-width:580px;margin:0}.stamp{background:var(--ink);color:#fff;border-radius:24px;padding:28px;box-shadow:var(--shadow);transform:rotate(2deg)}.stamp .big{font-size:50px;line-height:1;font-weight:900;letter-spacing:-.06em}.stamp p{color:#c8d3e3;font-size:15px;margin:14px 0 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(16,35,63,.05)}.card h2{font-size:18px;letter-spacing:-.02em;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}.number{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;color:var(--ink);font-weight:900;margin-bottom:18px}.n1{background:var(--orange)}.n2{background:var(--blue)}.n3{background:var(--mint)}.ladder{margin:40px 0;background:var(--ink);color:#fff;border-radius:26px;padding:28px;box-shadow:var(--shadow)}.ladder h2{font-size:28px;letter-spacing:-.04em;margin:0 0 20px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{position:relative;padding:16px;border:1px solid #314662;border-radius:16px;background:#172c49;min-height:126px}.step b{display:block;font-size:15px;margin-bottom:8px}.step span{display:block;color:#b9c8da;font-size:13px}.bar{height:5px;border-radius:8px;margin-top:14px}.s1 .bar{background:#ff7d74}.s2 .bar{background:var(--orange)}.s3 .bar{background:var(--blue)}.s4 .bar{background:var(--mint)}.check{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.check .card{display:flex;gap:14px;align-items:flex-start}.tick{font-size:22px;line-height:1}.footer{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-top:34px;border-top:1px solid var(--line);padding-top:20px}.footer strong{font-size:18px}.footer small{color:var(--muted);max-width:560px;display:block}.tag{display:inline-block;background:#e4ecff;color:#315da8;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800;margin-bottom:12px}
+    @media(max-width:780px){.hero{grid-template-columns:1fr}.grid,.steps{grid-template-columns:1fr 1fr}.check{grid-template-columns:1fr}.footer{display:block}.footer small{margin-top:12px}}@media(max-width:480px){.grid,.steps{grid-template-columns:1fr}.wrap{padding:24px 16px 34px}.hero h1{font-size:54px}}
+  </style>
+</head>
+<body>
+  <main class="wrap" aria-labelledby="title subtitle">
+    <div class="eyebrow">A field guide for honest operators</div>
+    <section class="hero">
+      <div>
+        <h1 id="title">Receipt <span>Radar</span></h1>
+        <p id="subtitle">A claim gets stronger when a stranger can follow it from “someone said it” to “here is the proof.”</p>
+      </div>
+      <aside class="stamp" aria-label="Core principle">
+        <svg width="54" height="54" viewBox="0 0 54 54" role="img" aria-label="A checked receipt icon"><rect x="5" y="4" width="35" height="45" rx="5" fill="#b9f2d0"/><path d="M14 17h17M14 25h17M14 33h10" stroke="#10233f" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="39" r="10" fill="#ffb35c"/><path d="m35 39 3 3 7-8" fill="none" stroke="#10233f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="big">Show.<br>Don't tell.</div>
+        <p>Separate a promise, a delivery record, and a payment receipt. They are different evidence.</p>
+      </aside>
+    </section>
+
+    <section class="grid" aria-label="Three questions for every claim">
+      <article class="card"><div class="number n1">01</div><h2>What is the claim?</h2><p>Write the smallest verifiable sentence. Avoid “we crushed it.” Prefer “the export contains 248 rows.”</p></article>
+      <article class="card"><div class="number n2">02</div><h2>What changed?</h2><p>Name the concrete delivery: a file, a deploy, a transfer, or a decision. Give it an identifier and a time.</p></article>
+      <article class="card"><div class="number n3">03</div><h2>Who can check?</h2><p>A useful receipt lets another person reproduce the check without trusting the author’s confidence.</p></article>
+    </section>
+
+    <section class="ladder" aria-labelledby="ladder-title">
+      <h2 id="ladder-title">Evidence ladder</h2>
+      <div class="steps">
+        <div class="step s1"><b>Assertion</b><span>“It works.”</span><div class="bar"></div></div>
+        <div class="step s2"><b>Artifact</b><span>A file or URL exists.</span><div class="bar"></div></div>
+        <div class="step s3"><b>Verification</b><span>A command or person checks it.</span><div class="bar"></div></div>
+        <div class="step s4"><b>Payment proof</b><span>Money moved, with a receipt.</span><div class="bar"></div></div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="check-title">
+      <span class="tag">Before you publish</span><h2 id="check-title">The three-line operator checklist</h2>
+      <div class="check">
+        <div class="card"><div class="tick">✓</div><p><strong>Who paid?</strong><br><span style="color:var(--muted)">Record the payer or transaction reference, without exposing private details.</span></p></div>
+        <div class="card"><div class="tick">✓</div><p><strong>What was delivered?</strong><br><span style="color:var(--muted)">Point to the exact artifact, version, or handoff.</span></p></div>
+        <div class="card"><div class="tick">✓</div><p><strong>Can someone else verify it?</strong><br><span style="color:var(--muted)">Give the shortest repeatable check and its result.</span></p></div>
+      </div>
+    </section>
+
+    <footer class="footer"><strong>Trust is a trail, not a tone.</strong><small>Original educational infographic. Designed to make honest receipts legible; never use it to manufacture evidence or imply revenue that did not happen.</small></footer>
+  </main>
+</body>
+</html>
